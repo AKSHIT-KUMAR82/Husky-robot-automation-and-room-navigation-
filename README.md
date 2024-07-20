@@ -72,13 +72,13 @@ Python libraries for DMP (such as dmp)
      pip install numpy pandas dmp
      ```
 ## Create a script to train the DMP model: 
-     Link of the DMP algorithm and generic algorithm is used to find the best hypertuning parameters : https://github.com/AKSHIT-KUMAR82/Husky-robot-automation-and-room-navigation-/blob/origin/DMP_trajectory_training.py
+     Link of the DMP algorithm and generic algorithm is used to find the best hypertuning parameters : https://github.com/AKSHIT-KUMAR82/Husky-robot-automation-and-room-navigation-/blob/origin/scripts/DMP_trajectory_training.py
 ## Note : After,Applying this algorithm,Our DMP will be trained for that trajectory to be followed by husky.You will get best hypertuning parameters after this algorithm get executed,which will be used further for it's simulation in gazebo
 
 **Simulate a trained Dynamic Movement Primitive (DMP) trajectory in Gazebo**
 ## Generate the Trajectory using DMP Parameters:
      ## Now,You have to create a that will generate a trajectory given the best parameters produced above....
-     Link for that python script : https://github.com/AKSHIT-KUMAR82/Husky-robot-automation-and-room-navigation-/blob/origin/generate_traj.py 
+     Link for that python script : https://github.com/AKSHIT-KUMAR82/Husky-robot-automation-and-room-navigation-/blob/origin/scripts/generate_traj.py 
 
 ## Publish the Trajectory as ROS Messages:
      ## Create a ROS node to publish the trajectory:
