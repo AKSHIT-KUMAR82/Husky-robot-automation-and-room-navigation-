@@ -81,22 +81,26 @@ Python libraries for DMP (such as dmp)
      ```
    **Create a script to train the DMP model:**
    
-     Link of the DMP algorithm and generic algorithm is used to find the best hypertuning parameters : https://github.com/AKSHIT-KUMAR82/Husky-robot-automation-and-room-navigation-/blob/origin/scripts/DMP_trajectory_training.py
+   Link of the DMP algorithm and generic algorithm is used to find the best hypertuning parameters : https://github.com/AKSHIT-KUMAR82/Husky-robot-automation-and-room-navigation-/blob/origin/scripts/DMP_trajectory_training.py
+   
    **Note : After,Applying this algorithm,Our DMP will be trained for that trajectory to be followed by husky.You will get best hypertuning parameters after this algorithm get executed,which will be used further for it's simulation in gazebo**
 
-11. ## Simulate a trained Dynamic Movement Primitive (DMP) trajectory in Gazebo**
-   **Generate the Trajectory using DMP Parameters:**
-     **Now,You have to create a that will generate a trajectory given the best parameters produced above....**
+11. ## Simulate a trained Dynamic Movement Primitive (DMP) trajectory in Gazebo
+    **Generate the Trajectory using DMP Parameters:**
+    
+    **Now,You have to create a that will generate a trajectory given the best parameters produced above....**
      
-     Link for that python script : https://github.com/AKSHIT-KUMAR82/Husky-robot-automation-and-room-navigation-/blob/origin/scripts/generate_traj.py 
+    Link for that python script : https://github.com/AKSHIT-KUMAR82/Husky-robot-automation-and-room-navigation-/blob/origin/scripts/generate_traj.py 
 
    **Publish the Trajectory as ROS Messages:**
-     **Create a ROS node to publish the trajectory:**
+   
+   **Create a ROS node to publish the trajectory:**
      
      Link for the node to publish the trajectory : https://github.com/AKSHIT-KUMAR82/Husky-robot-automation-and-room-navigation-/blob/origin/scripts/publish_trajectory.py
 
    **Execute the Trajectory in Gazebo:**
-     **Create a ROS node that subscribes to the /husky/dmp_trajectory topic and sends appropriate movement commands to the robot in Gazebo:**
+   
+   **Create a ROS node that subscribes to the /husky/dmp_trajectory topic and sends appropriate movement commands to the robot in Gazebo:**
      
      Link for the node to execute that trajectory in your virtual environment of gazebo : https://github.com/AKSHIT-KUMAR82/Husky-robot-automation-and-room-navigation-/blob/origin/scripts/TrainedDMP_trajectory_execute.py
 
