@@ -9,6 +9,6 @@ def generate_trajectory(ax, ax_new, beta, alpha, steps):
         trajectory.append((x, y))
     return trajectory
 
-best_params = (5.822907575701987, 8.614542308990474, 12.876585280801248, 20.977074359273495)
+best_params = (5.822907575701987, 8.614542308990474, 12.876585280801248, 20.977074359273495) # You have to add your best parameters after running DMP
 trajectory = generate_trajectory(*best_params, steps=100)
 
